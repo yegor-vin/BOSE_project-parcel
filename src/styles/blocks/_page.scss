@@ -1,0 +1,6 @@
+.page {
+  scroll-behavior: smooth;
+  &__body:has(.nav-page:target) {
+    overflow-y: scroll;
+  }
+}

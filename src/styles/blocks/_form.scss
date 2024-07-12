@@ -1,0 +1,97 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 0 0 48px;
+
+  grid-column: 1/3;
+
+  @include onTablet {
+    grid-column: 1/4;
+  }
+
+  @include onDesktop {
+    grid-column: 1 / 6;
+  }
+
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__input {
+    padding: 0 0 0 16px;
+
+    height: 48px;
+
+    border-radius: 40px;
+    border: none;
+    background-color: #f8f8fa;
+    transition: color 0.3s linear;
+
+    &:hover::placeholder {
+      color: #111111;
+    }
+  }
+
+  &__message {
+    padding: 14px 16px;
+
+    height: 148px;
+
+    font-family: inherit;
+
+    border-radius: 16px;
+    border: none;
+    background-color: #f8f8fa;
+
+    resize: none;
+
+    transition: color 0.3s linear;
+
+    &:hover::placeholder {
+      color: #111111;
+    }
+  }
+
+  &__button {
+    grid-column: 1/3;
+
+    @include onTablet {
+      grid-column: 1/4;
+    }
+
+    @include onDesktop {
+      grid-column: 1 / 6;
+    }
+
+    height: 56px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 40px;
+    border: 3px solid #292929;
+    background-color: #292929;
+    color: #fff;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+
+    transition: all 0.3s linear;
+    cursor: pointer;
+
+    &:hover {
+      color: #292929;
+      background-color: #fff;
+    }
+
+    &:focus {
+      color: #fff;
+      background-color: #111111;
+    }
+  }
+}

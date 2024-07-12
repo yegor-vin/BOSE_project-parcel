@@ -1,5 +1,26 @@
-$alert-color: red;
+@import "utils/reset";
+@import "utils/normalize";
+@import "utils/mixins";
 
-body {
-  margin: 0;
-}
+@import "blocks/page";
+@import "blocks/container";
+@import "blocks/grid";
+@import "blocks/header";
+@import "blocks/top-actions";
+@import "blocks/nav-page";
+@import "blocks/nav";
+@import "blocks/contacts";
+@import "blocks/logo";
+@import "blocks/menu";
+@import "blocks/section";
+@import "blocks/recommended";
+@import "blocks/product";
+@import "blocks/benefits";
+@import "blocks/contact";
+@import "blocks/form";
+@import "blocks/info";
+@import "blocks/headphones";
+@import "blocks/categories";
+@import "blocks/category";
+@import "blocks/footer";
+@import "blocks/close-button";

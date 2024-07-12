@@ -1,0 +1,89 @@
+.categories {
+  &__title {
+    text-align: center;
+    letter-spacing: -1.5px;
+    font-weight: 700;
+    color: #292929;
+    margin-bottom: 48px;
+    font-size: 32px;
+    line-height: 32px;
+
+    @include onTablet {
+      margin-bottom: 64px;
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    @include onDesktop {
+      font-size: 48px;
+      line-height: 48px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+    margin-bottom: 64px;
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22.4px;
+
+    @include onTablet {
+      font-size: 24px;
+      line-height: 33.6px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__view-button {
+    width: 100%;
+
+    @include onTablet {
+      margin: 0 auto;
+      width: 392px;
+    }
+
+    @include onDesktop {
+      width: 324px;
+    }
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 56px;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+
+    border-radius: 40px;
+    background-color: #292929;
+    color: #fff;
+    transition: all 0.3s linear;
+
+    cursor: pointer;
+
+    &:hover {
+      color: #292929;
+      background-color: #fff;
+    }
+
+    &:focus {
+      color: #fff;
+      background-color: #111111;
+    }
+  }
+}
