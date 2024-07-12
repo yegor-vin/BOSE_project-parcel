@@ -1,0 +1,7 @@
+.section {
+  padding: 0 0 120px;
+
+  &:first-child {
+    padding: 120px 0 120px;
+  }
+}

@@ -1,0 +1,24 @@
+.contact {
+  &__title {
+    margin: 0 0 48px;
+    letter-spacing: -1.5px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 32px;
+    line-height: 32px;
+
+    @include onTablet {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    @include onDesktop {
+      font-size: 48px;
+      line-height: 48px;
+    }
+  }
+
+  &__info {
+    grid-column: 1 / -1;
+  }
+}
